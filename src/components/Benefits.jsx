@@ -9,7 +9,7 @@ function Benefits() {
     <Section id="features">
       <div className="container relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl md:text-center"
           title="Chat Smarter, Not Harder with Brainwave"
         />
         <div className="flex flex-wrap gap-10 mb-10">
