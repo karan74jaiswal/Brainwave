@@ -14,7 +14,7 @@ function App() {
         <Benefits />
         <Collaboration />
         <HowToUse />
-        {/* <Pricing /> */}
+        <Pricing />
       </div>
       <ButtonGradient />
     </>
