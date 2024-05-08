@@ -4,6 +4,7 @@ import Collaboration from "./components/Collaboration";
 import HowToUse from "./components/HowToUse";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Pricing from "./components/Pricing";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
         <Benefits />
         <Collaboration />
         <HowToUse />
+        {/* <Pricing /> */}
       </div>
       <ButtonGradient />
     </>

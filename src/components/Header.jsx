@@ -10,9 +10,19 @@ function Header() {
   const [openNavigation, setOpenNavigation] = useState(false);
   const pathName = useLocation();
   const toggleNavigation = () => {
-    setOpenNavigation((v) => !v);
-    if (openNavigation) enablePageScroll();
-    else disablePageScroll();
+    if (openNavigation) {
+      setOpenNavigation(false);
+      enablePageScroll();
+    } else {
+      setOpenNavigation(true);
+      disablePageScroll();
+    }
+  };
+  const handleClick = () => {
+    if (!openNavigation) return;
+
+    enablePageScroll();
+    setOpenNavigation(false);
   };
   return (
     <div
@@ -41,7 +51,7 @@ function Header() {
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
                 } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-                onClick={toggleNavigation}
+                onClick={handleClick}
               >
                 {link.title}
               </a>
