@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <HowToUse />
         <Pricing />
         <Roadmap />
+        <Footer />
       </div>
       <ButtonGradient />
     </>

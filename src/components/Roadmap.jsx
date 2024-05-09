@@ -1,7 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import Button from "./Button";
-import { BottomLine } from "./design/Hero";
 import { roadmap } from "../constants";
 import { grid, check2, loading1 } from "../assets";
 import Tagline from "./Tagline";
